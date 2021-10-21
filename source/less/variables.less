@@ -1,0 +1,52 @@
+// COLORS
+@color-white: #FFFFFF;
+@color-black: #252525;
+@color-red: #FF0000;
+@color-orange: #F49300;
+@color-dark-orange: #F47321;
+@color-gray: #808080;
+@color-light-gray: #EDEDED;
+@color-blue: #00A6DF;
+@color-green: #006400;
+;
+
+
+// WIDTHS
+@sm: 576px - 1px;
+@md: 768px - 1px;
+@lg: 992px - 1px;
+@xl: 1200px - 1px;
+@xxl: 1440px - 1px;
+
+// FONTS
+html {
+  font-size: 16px;
+
+  @media (max-width: @md) {
+    font-size: 14px;
+  }
+}
+
+
+// ACTIVE
+a:active,
+button:active {
+  opacity: 0.8;
+}
+
+// HIDDEN
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  .visually-hidden();
+}
+
+.hidden {
+  display: none;
+}
+
+br {
+  @media (max-width: @xl) {
+    display: none;
+  }
+}
